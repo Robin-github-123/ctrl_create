@@ -288,79 +288,13 @@ const InaugurationPage = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-                className="relative mb-16"
+                className="flex items-center justify-center"
               >
-                <motion.h1
-                  className="text-7xl md:text-9xl font-heading font-black tracking-wider mb-6"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #ffffff 0%, #ff0080 30%, #8b5cf6 70%, #06b6d4 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    backgroundSize: "400% 400%",
-                  }}
-                  animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "linear",
-                  }}
-                >
-                  CTRL
-                </motion.h1>
-
-                <div className="flex items-center justify-center space-x-6 mb-6">
-                  <motion.div
-                    className="w-16 h-16 bg-gradient-to-r from-neon-pink to-purple-500 rounded-xl flex items-center justify-center relative"
-                    animate={{
-                      rotate: [0, 180, 360],
-                      scale: [1, 1.1, 1],
-                    }}
-                    transition={{
-                      duration: 8,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  >
-                    <span className="text-white font-bold text-3xl">+</span>
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-r from-purple-500 to-neon-pink rounded-xl opacity-0"
-                      animate={{
-                        opacity: [0, 0.5, 0],
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                      }}
-                    />
-                  </motion.div>
-                </div>
-
-                <motion.h1
-                  className="text-7xl md:text-9xl font-heading font-black tracking-wider"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #ff0080 0%, #8b5cf6 30%, #06b6d4 70%, #ffffff 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    backgroundSize: "400% 400%",
-                  }}
-                  animate={{
-                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "linear",
-                    delay: 3,
-                  }}
-                >
-                  CREATE
-                </motion.h1>
+                <img
+                  src="ctrlcreate@3x.png"
+                  className="w-1/2 inset-3 bg-primary-dark"
+                  alt="Hachi"
+                />
               </motion.div>
             )}
           </AnimatePresence>
@@ -372,7 +306,7 @@ const InaugurationPage = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.8 }}
-                className="max-w-4xl mx-auto space-y-8 mb-12"
+                className="max-w-4xl mx-auto space-y-4 mb-12"
               >
                 <motion.p
                   className="text-2xl md:text-3xl text-light-gray leading-relaxed"
